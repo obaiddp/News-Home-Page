@@ -1,12 +1,20 @@
-# React + Vite
+# 📰 News Home Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive news homepage built with **React** and **Tailwind CSS**, designed using a **Bento-style grid layout**. The design is fully responsive for mobile, tablet, and desktop views.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡ **Bento Grid Layout** using Tailwind's `grid-cols`, `grid-rows`, `gap`, `col-span`, and `row-span` utilities.
+- 📱 **Responsive Header** with separate views for mobile and desktop using:
+  - `hidden md:block` for desktop-only elements
+  - `block md:hidden` for mobile-only elements
+  - `focus:outline-none` for better UX on menu toggles
+- 🎨 Clean and modern UI using **Tailwind CSS**
+- 📐 Utility-first responsive design using `sm`, `md`, and `lg` breakpoints
+- 📁 Structured with reusable React components (e.g., `Header`, `BottomCard`, etc.)
 
-## Expanding the ESLint configuration
+## 🧱 Layout
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- The main content grid uses:
+  ```js
+  grid grid-cols-x grid-rows-x gap-x
